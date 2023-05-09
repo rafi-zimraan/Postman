@@ -154,6 +154,9 @@ const Postman = ({navigation}: Navigation) => {
           onChangeText={(nm: string) => setPassword_Confirmation(nm)}
         />
       </View>
+      <View style={styles.Txt}>
+        <Text>Sudah punya Account ? Sign In</Text>
+      </View>
       <TouchableOpacity onPress={() => Reg()} style={styles.Button}>
         {loading ? (
           <ActivityIndicator size="small" color="white" />
@@ -201,6 +204,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: 'gray',
     marginTop: 5,
+  },
+  Txt: {
+    top: 30,
+    left: 120,
   },
   Button: {
     justifyContent: 'center',
