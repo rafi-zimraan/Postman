@@ -26,19 +26,23 @@ const Postman = () => {
 
   const Reg = () => {
     if (email === '') {
-      Alert.alert('Perhatian !', 'Akun anda belum terdaftar terlebih dahulu', [
-        {
-          text: 'cancel',
-        },
-        {
-          text: 'ok',
-        },
-      ]);
+      Alert.alert(
+        'Perhatian !',
+        'Akun anda belum terdaftar, Mohon daftar terlebih dahulu',
+        [
+          {
+            text: 'cancel',
+          },
+          {
+            text: 'ok',
+          },
+        ],
+      );
     } else if (
       email.split('@')[1] !== 'gmail.com' &&
       email.split('@')[1] !== 'email.com'
     ) {
-      Alert.alert('Perhatikan !', 'Email yang anda masukan salah', [
+      Alert.alert('Perhatikan !', 'Email harus mengunakan "gmail.com" ', [
         {
           text: 'cancel',
         },
@@ -49,7 +53,7 @@ const Postman = () => {
     } else if (password === '') {
       Alert.alert(
         'Perhatian !',
-        'Password anda belum ada, mohon terlebih dahulu',
+        'Password anda belum ada, mohon isi terlebih dahulu',
         [
           {
             text: 'cancel',
