@@ -35,7 +35,6 @@ const HomeScreenPostman = ({navigation}: Navigation) => {
           Authorization: `Bearer ${value}`,
         },
       };
-
       fetch(
         'https://frontendreq.pondokprogrammer.com/api/index',
         requestOptions,
